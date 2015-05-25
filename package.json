@@ -1,0 +1,43 @@
+{
+	"name": "electron-angular-example",
+	"productName": "ElectronAngularExample",
+	"version": "0.0.0",
+	"description": "An example electron app using Angular2",
+	"license": "MIT",
+	"main": "index.js",
+	"repository": "jimschubert/electron-angular-example",
+	"author": {
+		"name": "Jim Schubert",
+		"email": "james.schubert@gmail.com",
+		"url": "ipreferjim.com"
+	},
+	"engines": {
+		"node": ">=0.10.0"
+	},
+	"scripts": {
+		"start": "electron ./app",
+		"postinstall": "jspm install",
+		"build": "electron-packager . $npm_package_productName --prune --asar --ignore=node_modules/electron-prebuilt --ignore=node_modules/electron-packager --ignore=.git"
+	},
+	"keywords": [
+		"electron-angular-example"
+	],
+	"devDependencies": {
+		"electron-packager": "^3.3.0",
+		"electron-prebuilt": "^0.25.2"
+	},
+	"jspm": {
+		"directories": {
+			"baseURL": "app/client"
+		},
+		"dependencies": {
+			"angular2": "npm:angular2@^2.0.0-alpha.25",
+			"es6-shim": "npm:es6-shim@^0.31.2",
+			"reflect-metadata": "npm:reflect-metadata@^0.1.0"
+		},
+		"devDependencies": {
+			"traceur": "github:jmcriffey/bower-traceur@0.0.88",
+			"traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88"
+		}
+	}
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>App</title>
+		<link rel="stylesheet" href="css/index.css">
+		<script src="jspm_packages/npm/es6-shim@0.31.2/es6-shim.min.js"></script>
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+			System.config({
+			  "baseURL": __dirname + "/"
+			});
+			System.import('scripts/main');
+    </script>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+			 <my-app></my-app>
+			</header>
+			<section class="main">
+			</section>
+			<footer></footer>
+		</div>
+	</body>
+</html>
