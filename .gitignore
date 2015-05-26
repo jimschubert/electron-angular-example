@@ -1,7 +1,9 @@
 ## Project-specific
 
-app/client/jspm_packages
-app/client/scripts/*.js
+client/jspm_packages
+client/scripts/*.js
+client/scripts/*.js.map
+*.app/
 
 # Created by https://www.gitignore.io
 

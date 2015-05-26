@@ -1,7 +1,6 @@
-# electron-angular
+# electron-angular-example
 
-> My splendid app
-
+> An example desktop application written with Electron and Angular2.
 
 ## Dev
 
