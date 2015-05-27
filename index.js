@@ -8,13 +8,13 @@ require('crash-reporter').start();
 // prevent window being GC'd
 let mainWindow = null;
 
-app.on('window-all-closed', function() {
+app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') {
     app.quit();
   }
 });
 
-app.on('ready', function() {
+app.on('ready', function () {
   mainWindow = new BrowserWindow({
     width: 600,
     height: 400,
@@ -23,7 +23,7 @@ app.on('ready', function() {
 
   mainWindow.loadUrl(`file://${__dirname}/client/index.html`);
 
-  mainWindow.on('closed', function() {
+  mainWindow.on('closed', function () {
     // deref the window
     // for multiple windows store them in an array
     mainWindow = null;

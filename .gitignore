@@ -3,7 +3,9 @@
 client/jspm_packages
 client/scripts/*.js
 client/scripts/*.js.map
-*.app/
+builds/darwin/
+builds/linux/
+builds/win32/
 
 # Created by https://www.gitignore.io
 
