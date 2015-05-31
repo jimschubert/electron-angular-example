@@ -3,7 +3,7 @@
 var GulpConfig = (function () {
 	function GulpConfig() {
 		this.source = '';
-		this.clientSource = this.source + 'client/scripts/';
+		this.clientSource = this.source + 'client/app/';
 		this.jspmLocation = this.source + 'client/jspm_packages/';
 
 		this.tsOutputPath = this.source;

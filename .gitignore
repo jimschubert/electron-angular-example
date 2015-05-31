@@ -1,8 +1,8 @@
 ## Project-specific
 
 client/jspm_packages
-client/scripts/*.js
-client/scripts/*.js.map
+client/app/*.js
+client/app/*.js.map
 builds/darwin/
 builds/linux/
 builds/win32/
@@ -15,7 +15,8 @@ builds/win32/
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*

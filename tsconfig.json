@@ -599,6 +599,6 @@
 		"./client/jspm_packages/npm/rx@2.5.1/ts/rx.time-lite.d.ts",
 		"./client/jspm_packages/npm/rx@2.5.1/ts/rx.time.d.ts",
 		"./client/jspm_packages/npm/rx@2.5.1/ts/rx.virtualtime.d.ts",
-		"./client/scripts/main.ts"
+		"./client/app/main.ts"
 	]
 }
