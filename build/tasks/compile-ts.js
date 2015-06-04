@@ -4,14 +4,13 @@
 var path = require('path'),
     gulp = require('gulp'),
     tsc = require('gulp-typescript'),
-    args = require('minimist')(process.argv.slice(2)),
+    args = require('../args'),
     gulpif = require('gulp-if'),
     debug = require('gulp-debug'),
     sourcemaps = require('gulp-sourcemaps'),
-    Config = require('../gulpfile.config'),
-    config = new Config();
+    config = require('../paths');
 
-var tsProject = tsc.createProject(path.normalize(__dirname+'/../tsconfig.json'), {
+var tsProject = tsc.createProject(config.root + '/tsconfig.json', {
     typescript: require('typescript')
 });
 

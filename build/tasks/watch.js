@@ -1,8 +1,7 @@
 'use strict';
 
 var gulp = require('gulp'),
-    Config = require('../gulpfile.config'),
-    config = new Config();
+    config = require('../paths');
 
 gulp.task('watch', function () {
     gulp.watch(config.allTypeScript, ['ts-lint', 'compile-ts',

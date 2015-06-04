@@ -31,7 +31,7 @@ var electronPackager = [
 	'--ignore=./gulpfile.js',
 	'--ignore=./gulpfile.config.js',
 	'--ignore=./readme.md',
-    '--ignore=./tasks'
+    '--ignore=./build'
 ];
 
 if (asar) {

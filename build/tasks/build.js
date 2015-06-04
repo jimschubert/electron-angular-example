@@ -2,11 +2,10 @@
 
 var gulp = require('gulp'),
     exec = require('child_process').exec,
-    args = require('minimist')(process.argv.slice(2)),
+    args = require('../args'),
     del = require('del'),
     path = require('path'),
-    Config = require('../gulpfile.config'),
-    config = new Config();
+    config = require('../paths');
 
 /** Performs a build.
  *

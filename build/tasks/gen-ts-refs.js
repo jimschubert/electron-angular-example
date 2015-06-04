@@ -3,8 +3,7 @@
 // This file was taken mostly from Dan Wahlin's example at https://github.com/DanWahlin/AngularIn20TypeScript
 var gulp = require('gulp'),
     inject = require('gulp-inject'),
-    Config = require('../gulpfile.config'),
-    config = new Config();
+    config = require('../paths');
 
 /**
  * Generates the app.d.ts references file dynamically from all application *.ts files.

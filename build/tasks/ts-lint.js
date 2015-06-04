@@ -3,11 +3,10 @@
 // This file was taken mostly from Dan Wahlin's example at https://github.com/DanWahlin/AngularIn20TypeScript
 var gulp = require('gulp'),
     tslint = require('gulp-tslint'),
-    args = require('minimist')(process.argv.slice(2)),
+    args = require('../args'),
     gulpif = require('gulp-if'),
     debug = require('gulp-debug'),
-    Config = require('../gulpfile.config'),
-    config = new Config();
+    config = require('../paths');
 
 /**
  * Lint all custom TypeScript files.
