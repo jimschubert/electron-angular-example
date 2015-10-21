@@ -33,7 +33,7 @@
     "gulp-debug": "^2.0.1",
     "gulp-filter": "^3.0.1",
     "gulp-if": "^2.0.0",
-    "gulp-inject": "^1.1.1",
+    "gulp-inject": "^3.0.0",
     "gulp-sourcemaps": "^1.3.0",
     "gulp-task-listing": "^1.0.0",
     "gulp-tsd": "0.0.4",
