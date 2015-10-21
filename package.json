@@ -27,7 +27,7 @@
   ],
   "devDependencies": {
     "del": "^2.0.2",
-    "electron-packager": "^4.2.0",
+    "electron-packager": "^5.1.0",
     "electron-prebuilt": "^0.26.1",
     "gulp": "^3.8.11",
     "gulp-debug": "^2.0.1",
