@@ -14,7 +14,8 @@
     "url": "ipreferjim.com"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=0.10.0",
+    "npm": "~2.14.7 <3.0.0"
   },
   "scripts": {
     "start": "electron .",
@@ -26,10 +27,11 @@
   ],
   "devDependencies": {
     "del": "^1.1.1",
-    "electron-packager": "^4.1.1",
+    "electron-packager": "^4.2.0",
     "electron-prebuilt": "^0.26.1",
     "gulp": "^3.8.11",
     "gulp-debug": "^2.0.1",
+    "gulp-filter": "^3.0.1",
     "gulp-if": "^1.2.5",
     "gulp-inject": "^1.1.1",
     "gulp-sourcemaps": "^1.3.0",

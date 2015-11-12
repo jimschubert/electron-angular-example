@@ -19,7 +19,7 @@ gulp.task('build', ['compile-ts'], function (cb) {
 
     var sw = '-';
     for (var arg in args) {
-        if (args.hasOwnProperty(arg)) {
+        if (arg !== '_' && args.hasOwnProperty(arg)) {
             if (arg.length == 1) {
                 sw = '-';
             } else {
@@ -39,7 +39,7 @@ gulp.task('build', ['compile-ts'], function (cb) {
     var commandText = command.join(' ');
     console.log('Executing build: %s', commandText);
     exec(commandText, {
-        cwd: path.normalize(__dirname+'/..')
+        cwd: config.root
     }, function (err, stdout, stderr) {
         console.log(stdout);
         console.log(stderr);
@@ -62,7 +62,7 @@ var runBuild = function (os, arch, asar) {
 
         var commandText = command.join(' ');
         exec(commandText, {
-            cwd: path.normalize(__dirname+'/..')
+            cwd: config.root
         }, function (err, stdout, stderr) {
             console.log(stdout);
             console.log(stderr);

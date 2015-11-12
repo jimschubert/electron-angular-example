@@ -8,6 +8,7 @@ var path = require('path'),
     gulpif = require('gulp-if'),
     debug = require('gulp-debug'),
     sourcemaps = require('gulp-sourcemaps'),
+    gulpFilter = require('gulp-filter'),
     config = require('../paths');
 
 var tsProject = tsc.createProject(config.root + '/tsconfig.json', {
@@ -43,7 +44,9 @@ var tsProject = tsc.createProject(config.root + '/tsconfig.json', {
  * Compile TypeScript
  */
 gulp.task('compile-ts', function () {
+    var filter = gulpFilter(['*', '!' + config.jspmLocation]);
     return tsProject.src()
+        .pipe(filter)
         .pipe(gulpif(args.debug, debug()))
         .pipe(sourcemaps.init())
         .pipe(tsc(tsProject))
